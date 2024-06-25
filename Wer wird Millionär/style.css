@@ -1,0 +1,475 @@
+.frageHintergrund {
+	background-image: url('bilder/background.png');
+	background-size:95%;
+	background-position: 50% 0%;
+
+}
+@keyframes buttonAnimationRight {
+	0% {
+	  transform: translateX(1000%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+@keyframes buttonAnimationLeft {
+	0% {
+	  transform: translateX(-1000%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+
+@keyframes slideInFromRight {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0%);
+	}
+  }
+
+  
+  @keyframes slideInFromTop {
+	0% {
+	  transform: translateY(-100%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+  @keyframes slideInFromBottom2 {
+	0% {
+	  transform: translateY(50%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+  @keyframes slideInFromBottom {
+	0% {
+	  transform: translateY(8%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+  @keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
+
+
+
+  .weg{
+	position: absolute;
+	left: 16%;
+	top: 27%;
+	
+	animation: fadeIn 2s;
+  }
+  
+  .geldAnzeige{
+	position: absolute;
+	top: 47px;
+	left: 37.5%;
+	width: 25%;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #031927;
+	outline: 3.5px solid #031927;
+	animation: slideInFromTop 1s ease-out, fadeIn 1.5s;
+	z-index: -1;
+  }
+  .geldText{
+	position: absolute;
+	top: 76.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-family: 'arial black';
+	font-size: 23px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+  }
+  
+  .kurve {
+	position: absolute;
+	top: -45px;
+	left: 40%;
+	
+	width: 220px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #08344f;
+	outline: 3.5px solid #ffd700;
+	z-index: -1;
+
+	animation: slideInFromBottom 2s, fadeIn 1s;
+	
+	
+  }
+
+  
+  .textInDerKurve {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffd700;
+	font-family: 'Arial Black';
+	font-size: 20px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); 
+
+  }
+
+  .headerStart{
+	animation: slideInFromTop 1s ease-out;
+  }
+  .headerFade{
+	animation: fadeIn .5s;
+  }
+
+  .header {
+	background: linear-gradient(#031927, #08344f, #031927); 
+	padding: 25px ;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 10px; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	
+	width: 110%;
+	position: absolute;
+	left: -10%;
+	top: 0px;
+	margin: auto;
+
+
+  }
+  body{
+	overflow-x: hidden;
+  }
+  
+  .title {
+	font-family: 'Arial Black', sans-serif; 
+	font-size: 60;
+	color: #ffd700; /* Gold */
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+	margin: 0;
+	padding-left: 7%;
+  }
+
+
+  
+
+
+
+.frage-box {
+	background: linear-gradient(45deg, #08344f, #031927); 
+	padding: 20px;
+	border-radius: 20px;
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	position: absolute;
+	width: 60%; 
+	outline: 3.5px solid #ffd700;
+	
+	top: 65%;
+	left: 19%;
+}
+
+.frage {
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff; 
+	font-family: 'Arial Black', sans-serif; 
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	
+}
+
+
+.topLeftButton{  
+	top: 78%;  
+	left: 20.5%; 
+	animation: buttonAnimationLeft 1s ease-out, fadeIn 2s;
+
+}
+.topRightButton{  
+	top: 78%; 
+	right: 20.5%;
+	animation: buttonAnimationRight 1.5s ease-out, fadeIn 2s;
+
+}
+.bottomLeftButton{  
+	top: 88%; 
+	left: 20.5%;
+	animation: buttonAnimationLeft 2s ease-out, fadeIn 2s;
+
+}
+.bottomRightButton{  
+	top:88%; 
+	right: 20.5%;
+	animation: buttonAnimationRight 2.5s ease-out, fadeIn 2s;
+
+	
+}
+.abbrechenButton{
+	padding: 20px;
+	font-size: 20;
+	font-weight: bold;
+	font-family: Helvetica;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+	text-align: center;
+	text-decoration: none; 
+	border-radius: 100px; 
+	color: white;
+	background: linear-gradient(45deg, #17608d, #054167); 
+	border: 2px solid #ffd700;
+	width: 7%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+	position: absolute;
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: slideInFromRight .75s, fadeIn .75s;
+	bottom: 2%;
+	right: 1%;
+}
+
+.button {
+	color: white;
+	text-align: left;
+	width: 25%;
+	padding: 10px;
+	padding-left: 30px;
+	border-radius: 100px; 
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	position: absolute;
+
+
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	text-decoration: none; 
+	
+	background: linear-gradient(45deg, #17608d, #054167); 
+	border: 2px solid #ffd700;
+	
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+	
+	transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+
+  .buttonText {
+	color: #ffd700;
+	font-size: 28px;
+	font-family: Bahnschrift;
+	animation: fadeIn .75s;
+  }
+ 
+  .button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+	background: linear-gradient(45deg, #ffc400, #d09f00);
+	border: 2px solid #ffd700;
+}
+
+.abbrechenButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+	background: linear-gradient(45deg, #c03324, #600b02); 
+	border: 2px solid #ffd700;
+	
+}
+.gewinnsummeText{
+	font-family: Arial, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: 36%;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fadeIn 2s;
+}
+.betragText{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 100px;
+	font-weight: bold;
+	color: #ffd700;
+	position: absolute;
+	top: 44%;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fadeIn 1s;
+}
+.spruchText{
+	font-family:'Segoe UI';
+	font-size: 25px;
+	font-weight: bold;
+	font-weight: bold;
+	color: #ffffff;
+	position: absolute;
+	top: 60%;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: fadeIn 2s;
+}
+
+.menuButton {
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px; 
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	position: absolute;
+
+
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	text-decoration: none; 
+	
+	background: linear-gradient(#004d7d, #2951b6, #004d7d); 
+	border: 2px solid #ffd700;
+	
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+	
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: slideInFromRight 1s, fadeIn 2s;
+	top:2%;
+	right: 1%;
+  }
+
+  .menuButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+	background: linear-gradient(45deg, #ffc400, #d09f00);
+	border: 2px solid #ffd700;
+}
+
+
+
+.retryButton {
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 100px; 
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Helvetica;
+	position: absolute;
+
+
+	left: 43%;
+	top: 80%;
+
+
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	text-decoration: none; 
+	
+	background: linear-gradient(#004d7d, #2951b6, #004d7d); 
+	border: 2px solid #ffd700;
+	
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+	
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: slideInFromBottom2 1s, fadeIn 2s;
+  }
+
+  .retryButton:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+	background: linear-gradient(45deg, #ffc400, #d09f00);
+	border: 2px solid #ffd700;
+}
+  
+.endScreen{
+	font-family: Arial, sans-serif;
+    background-image: url('bilder/endeBild.png');
+	background-position: center;
+	background-size: 110%;
+}
+.StartScreen{
+    font-family: Arial, sans-serif;
+    background-image: url('bilder/startScreenBild.png');
+	background-size: cover;
+}
+
+.StartButton {
+	padding: 20px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family:calibri;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 5);
+	text-align: center;
+	text-decoration: none; 
+	border-radius: 100px; 
+	color: white;
+	background: linear-gradient(45deg, rgb(23, 96, 141), rgb(5, 65, 103));
+	border: 5px solid #ffd700;;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	position: absolute; 
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: fadeIn 2s;
+	transform: translate(-50%, -50%);
+	top: 80%;
+	left: 50%;
+	width: 10%;
+	
+	
+	
+  }
+
+  .StartButton:hover {
+	
+	transform: translate(-50%, -54%);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+	background: linear-gradient(45deg, #ffc400, rgb(208, 159, 0));
+	border: 5px solid #ffd700;
+}
+
+
+.abbrechenButton:hover + .hover-bild {
+    opacity: 1;
+	animation: fadeIn .5s, slideInFromBottom .75s;
+
+
+}
+
+
+.hover-bild {
+    opacity: 0;
+    position: absolute;
+	top:73%;
+	scale: 60%;
+	left: 69%;
+}
+
